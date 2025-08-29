@@ -1,0 +1,12 @@
+model\DataLogic.class
+model\OptimizedLogic.class
+com\mycompany\web1\resources\JakartaEE10Resource.class
+Listener\AppListener.class
+Servlet\SessionServlet1.class
+com\mycompany\web1\JakartaRestConfiguration.class
+Servlet\SumInit.class
+Servlet\EmployeeServlet.class
+Servlet\BookQueryStringServlet.class
+Servlet\SessionServlet2.class
+model\Employee.class
+Servlet\CookieServlet.class
