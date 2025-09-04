@@ -82,21 +82,9 @@
 
 ###### 
 
-###### -> **pom.xml** :-- Add below Dependencies 
+###### -> **pom.xml** :-- Add Dependencies 
 
-###### &nbsp;
-
-&nbsp; <dependency>
-
-&nbsp;     <groupId>mysql</groupId>
-
-&nbsp;     <artifactId>mysql-connector-java</artifactId>
-
-&nbsp;     <version>5.1.47</version>
-
-&nbsp;     <scope>provided</scope>            
-
-&nbsp; </dependency>
+###### 
 
 ##### 
 
