@@ -1,0 +1,23 @@
+*/target/
+*/build/
+
+# Ignore NetBeans config
+Web1/nb-configuration.xml
+
+# Ignore persistence + beans config
+Web1/src/main/resources/META-INF/persistence.xml
+Web1/src/main/webapp/WEB-INF/beans.xml
+
+# Ignore auto-generated JakartaEE files
+Web1/src/main/java/com/mycompany/web1/JakartaRestConfiguration.java
+Web1/src/main/java/com/mycompany/web1/resources/JakartaEE10Resource.java
+
+
+Web1/src/main/java/com
+
+# Ignore Image folder
+SessionWeb2App/src/main/webapp/images
+
+
+/CoreJavaAssignment/
+/SessionWeb2App/
