@@ -3,15 +3,19 @@
 
 # Ignore NetBeans config
 Web1/nb-configuration.xml
+SessionWeb2App/nb-configuration.xml
 
 # Ignore persistence + beans config
 Web1/src/main/resources/META-INF/persistence.xml
 Web1/src/main/webapp/WEB-INF/beans.xml
+SessionWeb2App/src/main/resources/META-INF/persistence.xml
+SessionWeb2App/src/main/webapp/WEB-INF/beans.xml
 
 # Ignore auto-generated JakartaEE files
 Web1/src/main/java/com/mycompany/web1/JakartaRestConfiguration.java
 Web1/src/main/java/com/mycompany/web1/resources/JakartaEE10Resource.java
-
+SessionWeb2App/src/main/java/com/mycompany/sessionweb2app/JakartaRestConfiguration.java
+SessionWeb2App/src/main/java/com/mycompany/sessionweb2app/resources/JakartaEE10Resource.java
 
 Web1/src/main/java/com
 
@@ -20,3 +24,4 @@ SessionWeb2App/src/main/webapp/images
 
 
 /CoreJavaAssignment/
+
