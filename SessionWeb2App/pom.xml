@@ -5,7 +5,7 @@
     <artifactId>SessionWeb2App</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>SessionWeb2App-1.0-SNAPSHOT</name>
+    <name>SessionWeb2App</name>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

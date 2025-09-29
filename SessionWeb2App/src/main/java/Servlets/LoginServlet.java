@@ -48,7 +48,7 @@ public class LoginServlet extends HttpServlet {
         }
 
             out.println("<HTML><HEAD><TITLE>Login Form</TITLE></HEAD>");
-            out.println("<BODY><FORM ACTION='/SessionWeb2App' METHOD='post' NAME='formLogin'>");
+            out.println("<BODY><FORM ACTION='/SessionWeb2App/RememberMeServlet' METHOD='post' NAME='formLogin'>");
 //            out.println("<TABLE><TR><TD ALIGN='center'><IMG SRC='/images/login_security.jpeg' width='64' HEIGHT='64' BORDER='0'>");
             out.println("<TABLE WIDTH='25%' BORDER='1' ALIGN='center' CELLPADDING='3' CELLSPACING='1' BORDERCOLOR='#000000'>");
             out.println("<TR BORDERCOLOR='#92CAEB' BGCOLOR='white'><TD COLSPAN='2'>Member Login</TD></TR>");

@@ -1,8 +1,10 @@
+package Servlets;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
-package Servlets;
+
 
 import jakarta.servlet.http.*;
 import java.io.*;
@@ -26,8 +28,7 @@ public class RememberMeServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
@@ -37,7 +38,7 @@ public class RememberMeServlet extends HttpServlet {
         try {
             String username = "root";
             String password = "";
-            String url = "jdbc:mysql://localhost/test?useSSL=false";
+            String url = "jdbc:mysql://localhost/dbemp?useSSL=false";
 
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
             con = DriverManager.getConnection(url, username, password);
