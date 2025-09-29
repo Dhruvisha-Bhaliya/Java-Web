@@ -16,6 +16,8 @@ Web1/src/main/java/com/mycompany/web1/JakartaRestConfiguration.java
 Web1/src/main/java/com/mycompany/web1/resources/JakartaEE10Resource.java
 SessionWeb2App/src/main/java/com/mycompany/sessionweb2app/JakartaRestConfiguration.java
 SessionWeb2App/src/main/java/com/mycompany/sessionweb2app/resources/JakartaEE10Resource.java
+SessionWeb2App/src/main/java/Servlets/LoginServlet.java
+SessionWeb2App/src/main/java/Servlets/RememberMeServlet.java
 
 Web1/src/main/java/com
 
