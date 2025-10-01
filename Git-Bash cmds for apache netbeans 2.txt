@@ -1,0 +1,46 @@
+Git-Bash cmds for apache netbeans 25 projects :--
+
+1. cd "D:/ENTERPRISE JAVA" -> For inside ENTERPRISE JAVA folder
+
+
+2. git init
+Initialized empty Git repository in D:/ENTERPRISE JAVA/.git/ -> For Initialize repository or connect to git
+
+
+3.  git add .gitignore README.md -> In repo if first add gitignore and readme 
+
+
+4.  git commit -m "Add repo .gitignore and README" -> for commit
+
+
+5.  git remote add origin https://github.com/Dhruvisha-Bhaliya/Java-Web.git -> which repo and which account commit
+
+6.  git branch -M main -> convert branch master to main
+
+7.  git push -u origin main -> For push first time
+
+8. DELL@DESKTOP-IJBLPKM MINGW64 /d/ENTERPRISE JAVA (main)
+$ git add Web1 -> Web1 Project add into GitHub
+
+9.  git commit -m "Add Fist Web Project" -> commit with proper msg
+
+10.  git push -> push project
+
+11. git status -> if any file modifying or update that showing
+
+12.  git add .gitignore -> update then also run same like this
+
+13. git commit -m "Update .gitignore"
+
+14. git push
+
+
+
+
+
+
+
+
+
+
+
