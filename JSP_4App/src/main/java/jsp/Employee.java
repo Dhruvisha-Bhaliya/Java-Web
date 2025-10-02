@@ -11,7 +11,6 @@ import java.util.HashMap;
  *
  * @author DELL
  */
-
 public class Employee implements Serializable {
 
     int empno;
@@ -53,10 +52,21 @@ public class Employee implements Serializable {
 
     public boolean validate() {
         boolean allOK = true;
+
         if (empno == 0) {
             allOK = false;
-            errors.put("salary", "salary can not be less than 1000");
+            errors.put("empno", "Empno can not be blank or zero");
         }
+        if (ename.equals("")) {
+            allOK = false;
+            errors.put("ename", "Ename can not be blank");
+        }
+
+        if (salary < 1000) {
+            allOK = false;
+            errors.put("salary", "Salary can not be less than 1000");
+        }
+
         return allOK;
     }
 

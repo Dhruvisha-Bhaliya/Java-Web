@@ -22,9 +22,9 @@
         </h2>
         <%
         } else {
-            {%>
+        %>
         <jsp:forward page="EmpForm.jsp"/>
         <%
-                         }%>
+            }%>
     </body>
 </html>

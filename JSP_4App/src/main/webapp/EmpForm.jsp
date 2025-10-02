@@ -17,7 +17,7 @@
         <form action="Emp.jsp" method="POST">
             <table width="50%" border="1">
                 <tr><td>Emp no</td>
-                    <td> <input type="text" name="empno" value=",%=emp.getEmpno()%>"></td><td style="color:red"><%=emp.getError("empno")%></td></tr>
+                    <td> <input type="text" name="empno" value="<%=emp.getEmpno()%>"></td><td style="color:red"><%=emp.getError("empno")%></td></tr>
                 <tr><td>     Name :</td> 
                     <td> <input type="text" name="ename" value="<%=emp.getEname()%>"></td><td style="color:red"> <%=emp.getError("ename")%> </td></tr>
                 <tr><td> Salary :</td> 
