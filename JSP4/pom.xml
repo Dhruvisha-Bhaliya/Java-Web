@@ -5,7 +5,7 @@
     <artifactId>JSP4</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>JSP4</name>
+    <name>JSP4App</name>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
