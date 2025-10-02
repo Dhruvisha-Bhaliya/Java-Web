@@ -5,7 +5,7 @@
     <artifactId>EJB3</artifactId>
     <version>1</version>
     <packaging>war</packaging>
-    <name>EJB3</name>
+    <name>EJB3App</name>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
