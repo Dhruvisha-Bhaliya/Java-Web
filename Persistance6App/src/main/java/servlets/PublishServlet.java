@@ -52,27 +52,30 @@ public class PublishServlet extends HttpServlet {
             out.println("<body><h3>");
 
             // Add a new customer
-            pbl.addCustomer("Era", "Doe");
+        //    pbl.addCustomer("Era", "Doe");
+            
+         //   pbl.removeCustomer(2);
 
             // Add address for customer with id=1
-            pbl.addAddressToCustomer("A-564", "Pune", "Maharashtra", "398006", 1);
+          //  pbl.addAddressToCustomer("A-564", "Pune", "Maharashtra", "398006", 1);
 
             // Prepare subscription ids (empty now)
             Collection<Integer> ids = new ArrayList<>();
             
             // add subscriptions to customer 
-            ids.add(1); // Subscription ID
+        //    ids.add(1); // Subscription ID
 //            ids.add(2);
 //            ids.add(5);
 
             // pbl.addSubscription("Facebook", "Campign");
-            pbl.addSubscription("Snapchat", "Stories");
+         //   pbl.addSubscription("Snapchat", "Stories");
 
 //            pbl.addSubscription("Amazon Prime", "Entertainment");
 //            pbl.addSubscription("Spotify", "Music");
 
 // safely add subscriptions to customer = 13
-            pbl.addSubscriptionsToCustomer(2, ids); //customerId
+          //  pbl.addSubscriptionsToCustomer(2, ids); //customerId
+        //    pbl.removeSubscriptionsToCustomer(1, ids);
 
             // Fetch all customers from DB
             Collection<Customer> customers = pbl.getAllCustomer();
