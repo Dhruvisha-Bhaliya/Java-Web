@@ -30,7 +30,12 @@ public class MyRestClient {
 
     public MyRestClient() {
         client = jakarta.ws.rs.client.ClientBuilder.newClient();
-        webTarget = client.target(BASE_URI).path("jakartaee10");
+        webTarget = client.target(BASE_URI).path("rest");
+    }
+
+    public String sayHello() throws ClientErrorException {
+        WebTarget resource = webTarget;
+        return resource.request(jakarta.ws.rs.core.MediaType.TEXT_HTML).get(String.class);
     }
 
     public <T> T ucases(Object requestEntity, Class<T> responseType) throws ClientErrorException {

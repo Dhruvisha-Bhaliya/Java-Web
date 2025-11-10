@@ -29,16 +29,26 @@ public class RestClient {
 
     public RestClient() {
         client = jakarta.ws.rs.client.ClientBuilder.newClient();
-        webTarget = client.target(BASE_URI).path("jakartaee10");
+        webTarget = client.target(BASE_URI).path("rest");
     }
 
-    public <T> T ping(Class<T> responseType) throws ClientErrorException {
+    public String sayHello() throws ClientErrorException {
         WebTarget resource = webTarget;
-        return resource.request().get(responseType);
+        return resource.request(jakarta.ws.rs.core.MediaType.TEXT_HTML).get(String.class);
+    }
+
+    public <T> T toUppers(Object requestEntity, Class<T> responseType) throws ClientErrorException {
+        return webTarget.path("ucases").request(jakarta.ws.rs.core.MediaType.APPLICATION_JSON).put(jakarta.ws.rs.client.Entity.entity(requestEntity, jakarta.ws.rs.core.MediaType.APPLICATION_JSON), responseType);
+    }
+
+    public String saySpecialHello(String pname) throws ClientErrorException {
+        WebTarget resource = webTarget;
+        resource = resource.path(java.text.MessageFormat.format("special/{0}", new Object[]{pname}));
+        return resource.request(jakarta.ws.rs.core.MediaType.TEXT_HTML).get(String.class);
     }
 
     public void close() {
         client.close();
     }
-    
+
 }
